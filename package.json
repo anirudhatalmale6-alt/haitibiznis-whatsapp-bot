@@ -1,11 +1,11 @@
 {
-  "name": "haitibiznis-whatsapp-bot",
+  "name": "project",
   "version": "1.0.0",
   "description": "AI WhatsApp chatbot for HaitiBiznis, MyPlopPlop, MsouWout, Koutye Biznis, Tike Lakay",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
